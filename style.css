@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f8fb;
+    color: #333;
+    line-height: 1.7;
+}
+
+header {
+    background: #087eaa;
+    color: white;
+    padding: 25px 7%;
+}
+
+nav {
+    background: #05658d;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+.hero {
+    background: linear-gradient(120deg, #087eaa, #48bed0);
+    color: white;
+    padding: 70px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    max-width: 650px;
+}
+
+.hero .gambar {
+    font-size: 110px;
+}
+
+.btn {
+    display: inline-block;
+    background: white;
+    color: #087eaa;
+    padding: 12px 22px;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+section {
+    padding: 55px 8%;
+    scroll-margin-top: 65px;
+}
+
+section h2 {
+    color: #087eaa;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+
+.card h3 {
+    color: #087eaa;
+    margin-bottom: 12px;
+}
+
+ul {
+    padding-left: 22px;
+}
+
+.highlight {
+    background: #dff4fa;
+    border-left: 5px solid #087eaa;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 6px;
+}
+
+form {
+    background: white;
+    padding: 25px;
+    max-width: 600px;
+    margin: auto;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 7px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+button {
+    background: #087eaa;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    margin-top: 18px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#hasil {
+    margin-top: 15px;
+    color: green;
+    font-weight: bold;
+}
+
+footer {
+    background: #05658d;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+@media(max-width: 650px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero h1 {
+        font-size: 29px;
+    }
+}
